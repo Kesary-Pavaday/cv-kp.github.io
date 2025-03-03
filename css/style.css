@@ -1,0 +1,252 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+.header-top {
+    background: #068ec6;
+    text-align: center;
+    padding: 15px;
+}
+
+.name-box h1 {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.name-box p {
+    color: white;
+    font-size: 14px;
+}
+
+.header-bottom {
+    background: #111;
+    color: white;
+    padding: 18px 0;
+}
+
+.header-bottom ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.header-bottom li {
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    margin: 20px 0;
+    border-radius: 5px;
+    flex: 1;
+}
+
+aside {
+    flex: 1;
+    min-width: 250px;
+    background: #e5eaeb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+aside img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+aside h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+section {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+article h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+article ul {
+    display: grid;
+    grid-template-columns: 120px auto;
+    row-gap: 8px;
+}
+
+article ul li {
+    display: contents;
+}
+
+article ul li span.periode {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+}
+
+article ul li .desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2 / span 1;
+}
+
+article ul li .desc-container span.desc {
+    /* text-align: center; */
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+article ul li .desc-container ul {
+    list-style-type: disc;
+    /* margin-left: 20px; */
+    /* padding-left: 0; */
+    width: 100%;
+}
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 1;
+    width: 100%;
+}
+
+.details {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details li {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+article ul li .desc-container ul li {
+    text-align: left;
+    display: list-item;
+    margin-left: 10px;
+    white-space: normal;
+}
+
+article ul li:nth-child(odd) {
+    background: #f9f9f9;
+    /* padding: 10px; */
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #068ec6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 10px;
+}
+
+.footer-right img {
+    height: 20px;
+}
+
+.footer-right a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .header-bottom ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    article ul {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-right {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
