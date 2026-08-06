@@ -11,4 +11,4 @@ Portfolio personnel présentant mon parcours en développement, test logiciel, f
 
 ## Voir le portfolio
 
-[Accéder au site](https://kesary-pavaday.github.io/cv-kp.github.io/)
+[Accéder au site](https://kesary-p.github.io/cv-kp.github.io/)
