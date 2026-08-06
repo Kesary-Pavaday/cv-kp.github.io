@@ -1,144 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Kesary PAVADAY</title>
-    <meta name="description" content="CV moderne et responsive en HTML et CSS utilisant Flexbox et nth-child." />
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Kesary Pavaday — développement, qualité logicielle, formation et évolution vers les agents IA.">
+  <meta name="theme-color" content="#08111f">
+  <title>Kesary Pavaday — Développement, qualité & IA</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <div class="name-box">
-                <h1><span id="prenom">Kesary</span> <span id="nom">PAVADAY</span></h1>
-                <p>Testeuse Logiciels</p>
-            </div>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil">KP<span>.</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#profil">Profil</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#projets">Projets</a>
+    </nav>
+    <a class="button button-small" href="https://www.linkedin.com/in/kesary-pavaday-9970a4133/" target="_blank" rel="noreferrer">Me contacter</a>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">Développement · Qualité · Transmission</p>
+        <h1>Je construis des solutions numériques <em>utiles et fiables.</em></h1>
+        <p class="hero-intro">Développeuse et testeuse logiciel, ancienne formatrice en programmation, j'oriente aujourd'hui mon parcours vers la conception d'applications et d'agents propulsés par l'intelligence artificielle.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projets">Découvrir mes projets</a>
+          <a class="text-link" href="https://github.com/Kesary-Pavaday" target="_blank" rel="noreferrer">Voir mon GitHub <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="header-bottom">
-            <ul>
-                <li><strong>Adresse :</strong> 22 Rue Georges Clemenceau, 59760 Grande Synthe</li>
-                <li><strong>Téléphone :</strong> 06.14.48.22.45</li>
-                <li><strong>Mail :</strong> kpavaday@gmail.com</li>
-            </ul>
+        <ul class="highlights" aria-label="Points clés">
+          <li><strong>360°</strong><span>Vision du produit</span></li>
+          <li><strong>ISTQB</strong><span>Qualité logicielle</span></li>
+          <li><strong>IA</strong><span>Nouvel objectif</span></li>
+        </ul>
+      </div>
+      <div class="portrait-wrap" aria-label="Portrait de Kesary Pavaday">
+        <div class="portrait-frame">
+          <img src="./images/me.jpg" alt="Kesary Pavaday" width="420" height="420">
         </div>
-    </header>
-    
-    <main class="content">
-        <aside>
-            <img src="./images/me.jpg" alt="Photo du CV"> 
-            <article>
-                <h2>Compétences</h2> 
-                <p>Développeur web<br>Graphiste</p> 
-            </article>
-            <article>
-                <h2>Langues</h2>
-                <p>Anglais</p>
-            </article>
-            <article>
-                <h2>Centres d'intérêt</h2>
-                <p>Voyages<br>Cinéma<br>Musique</p>
-            </article>
-        </aside>
-        
-        <section>
-            <article>
-                <h2>Profil</h2>
-                <p class="profil">Développeuse de formation, j’ai évolué vers le test logiciel pour allier mon expertise en développement à l’assurance qualité. 
-                    Mon expérience en support et en développement me permet d’avoir une vision globale des applications, 
-                    garantissant ainsi des tests efficaces et pertinents.</p>
-            </article>
-            <article>
-                <h2>Expérience</h2>
-                <ul>
-                    <li>
-                        <span class="periode">2022 - 2024</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Formatrice Programmation Informatique</strong> - AFCI, Dunkerque</span>
-                            <ul class="details">
-                                <li>Mise en œuvre des programmes de formation pour la certification Développeur Web et Web Mobile (RNCP37674)</li>
-                                <li>Conception et rédaction de supports pédagogiques adaptés aux besoins des apprenants</li> 
-                                <li>Conduite des entretiens de recrutement des stagiaires pour sélectionner les profils adaptés</li>
-                                <li>Suivi des dossiers administratif des stagiaires</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        
-                        <span class="periode">2017 - 2018</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Administratrice Réseaux</strong> - PROSERVIA, Villeneuve d'Ascq</span>
-                            <ul class="details">
-                                <li>Création, gestion et suppression des comptes utilisateurs dans l'annuaire Active Directory.</li>
-                                <li>Administration de la suite Office 365 (gestion des utilisateurs et configurations)</li> 
-                                <li>Déploiement d’applications et de mises à jour via SCCM (System Center Configuration Manager)</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="periode">2016 - 2017</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Cheffe de projet</strong> - PROSERVIA, Villeneuve d'Ascq</span>
-                            <ul class="details">
-                                <li>Gestion des projets liés à l’infrastructure informatique</li>
-                                <li>Coordination des équipes techniques et suivi des étapes clés</li> 
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="periode">2014 - 2016</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Support IT</strong> - INTERWAYS, Wambrechies</span>
-                            <ul class="details">
-                                <li>Support informatique pour le client McDonalds France de niveau 1 et 2, problèmes informatiques, imprimantes, écrans, caisses, server</li>
-                                <li>Participation à l’implémentation de systèmes virtualisés pour les restaurants des Hauts de France</li> 
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="periode">2012 - 2013</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Support IT</strong> - TÉLÉPERFORMANCE, Lille</span>
-                            <ul class="details">
-                                <li>Support informatique pour le client SFR ADSL</li>
-                                <li>Résolution des problèmes liés à Internet, TV et VOIP</li> 
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="periode">1992 - 2008</span>
-                        <div class="desc-container">
-                            <span class="desc"><strong>Responsable Qualité</strong> - CEWE COLOR, Bordeaux</span>
-                            <ul class="details">
-                                <li>Contribution au développement numérique et à l'amélioration des processusus du laboratoire</li>
-                                <li>Supervision et contrôle qualité des produits conformément aux normes ISO en vigueur</li> 
-                            </ul>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </article>
-            <article>
-                <h2>Formations</h2>
-                <ul>
-                    <li><span class="periode">2024 - 2025</span> <span class="desc">Certification ISTQB - Testeuse Logiciels</span></li>
-                    <li><span class="periode">2015 - 2016</span> <span class="desc">Certification Dell Server</span></li>
-                    <li><span class="periode">2010 - 2011</span> <span class="desc">Licence en Informatique - IUT du Littoral Côte d'Opale</span></li>
-                    <li><span class="periode">2008 - 2009</span> <span class="desc">DUT Informatique - IUT de Bordeaux</span></li>
-                    <li><span class="periode">2003 - 2004</span> <span class="desc">Baccalauréat Professionnel de Comptabilité</span></li>
-                </ul>
-            </article>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left"></div>
-            <div class="footer-right">
-                <img src="./images/logo.png" alt="logo LinkedIn">
-                <a href="https://www.linkedin.com/in/kesary-pavaday-9970a4133/">Kesary PAVADAY</a>
-            </div>
-        </div>
-    </footer>
+        <p class="status"><span aria-hidden="true"></span> En apprentissage continu</p>
+      </div>
+    </section>
+
+    <section class="section split" id="profil">
+      <div>
+        <p class="eyebrow">À propos</p>
+        <h2>Un parcours transversal au service du produit.</h2>
+      </div>
+      <div class="prose">
+        <p>Passionnée par les nouvelles technologies, j'ai fait de chaque étape professionnelle une occasion d'apprendre et de me réinventer.</p>
+        <p>Du support informatique à la gestion de projet, de l'administration réseau à la formation en développement web, puis au test logiciel : mon parcours me permet de comprendre les besoins des utilisateurs, les contraintes techniques et l'importance d'un produit fiable.</p>
+        <p>Je mobilise aujourd'hui cette expérience pour apprendre à développer des agents IA responsables, testables et réellement utiles.</p>
+      </div>
+    </section>
+
+    <section class="section" id="competences">
+      <p class="eyebrow">Compétences</p>
+      <h2>Ce que j'apporte à une équipe.</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Développement web</h3>
+          <p>Conception d'interfaces web structurées, responsives et accessibles.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>GitHub</li></ul>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Test & qualité</h3>
+          <p>Culture qualité, tests fonctionnels et regard critique sur l'expérience utilisateur.</p>
+          <ul class="tags"><li>ISTQB</li><li>Tests</li><li>Qualité</li></ul>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Transmission</h3>
+          <p>Création de supports, animation de formations et accompagnement d'apprenants.</p>
+          <ul class="tags"><li>Pédagogie</li><li>Formation</li><li>Suivi</li></ul>
+        </article>
+        <article class="card">
+          <span class="card-number">04</span>
+          <h3>Systèmes & support</h3>
+          <p>Administration de comptes, déploiement, support utilisateur et coordination technique.</p>
+          <ul class="tags"><li>Active Directory</li><li>Microsoft 365</li><li>SCCM</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="parcours">
+      <p class="eyebrow">Expérience</p>
+      <h2>Un fil rouge : comprendre, fiabiliser, transmettre.</h2>
+      <div class="timeline">
+        <article><time>2024 — 2025</time><div><h3>Certification ISTQB · Test logiciel</h3><p>Consolidation des méthodes et bonnes pratiques du test logiciel.</p></div></article>
+        <article><time>2022 — 2024</time><div><h3>Formatrice en programmation informatique</h3><p>AFCI, Dunkerque — conception de supports, animation et suivi de formations Développeur Web et Web Mobile.</p></div></article>
+        <article><time>2017 — 2018</time><div><h3>Administratrice réseaux</h3><p>Proservia — Active Directory, Microsoft 365 et déploiement d'applications avec SCCM.</p></div></article>
+        <article><time>2016 — 2017</time><div><h3>Cheffe de projet</h3><p>Proservia — coordination d'équipes techniques et suivi de projets d'infrastructure.</p></div></article>
+        <article><time>2012 — 2016</time><div><h3>Support informatique</h3><p>Interways et Téléperformance — diagnostic et résolution d'incidents de niveaux 1 et 2.</p></div></article>
+        <article><time>1992 — 2008</time><div><h3>Responsable qualité</h3><p>CEWE — contrôle qualité et amélioration des processus dans un environnement en transformation numérique.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="projets">
+      <p class="eyebrow">Projets</p>
+      <div class="section-heading">
+        <h2>Apprendre en construisant.</h2>
+        <p>Une sélection appelée à grandir au fil de ma progression.</p>
+      </div>
+      <div class="projects">
+        <article class="project project-featured">
+          <p class="project-label">Projet actuel</p>
+          <h3>Portfolio personnel</h3>
+          <p>Une vitrine responsive pour présenter mon parcours, mes compétences et ma transition vers le développement d'agents IA.</p>
+          <a class="text-link" href="https://github.com/Kesary-Pavaday/cv-kp.github.io" target="_blank" rel="noreferrer">Voir le code <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project project-next">
+          <p class="project-label">Prochaine étape</p>
+          <h3>Assistant pédagogique IA</h3>
+          <p>Un premier agent destiné à expliquer simplement une notion, proposer un exercice puis fournir un retour constructif.</p>
+          <span class="coming">En construction</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">Échangeons</p>
+      <h2>Vous travaillez sur un projet où la pédagogie, la qualité et l'IA se rencontrent ?</h2>
+      <a class="button button-light" href="https://www.linkedin.com/in/kesary-pavaday-9970a4133/" target="_blank" rel="noreferrer">Me retrouver sur LinkedIn <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Kesary Pavaday</p>
+    <p>Développé avec curiosité et exigence.</p>
+  </footer>
 </body>
 </html>
