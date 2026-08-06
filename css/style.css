@@ -50,8 +50,8 @@ h3 { margin: .65rem 0; font-size: 1.3rem; letter-spacing: -.025em; }
 .highlights strong { font: 800 1.25rem "Manrope", sans-serif; }
 .highlights span { color: var(--ink-soft); font-size: .83rem; }
 .portrait-wrap { position: relative; }
-.portrait-frame { position: relative; overflow: hidden; aspect-ratio: 1 / 1.12; border-radius: 45% 45% 24px 24px; background: var(--accent); box-shadow: 28px 28px 0 var(--violet); }
-.portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.portrait-frame { position: relative; overflow: hidden; aspect-ratio: 1 / 1.05; border-radius: 42% 42% 24px 24px; background: var(--accent); box-shadow: 28px 28px 0 var(--violet); }
+.portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
 .status { position: absolute; left: -2rem; bottom: 2rem; margin: 0; padding: .75rem 1rem; border-radius: 999px; background: var(--white); box-shadow: 0 12px 30px #08111f24; font-size: .85rem; font-weight: 700; }
 .status span { display: inline-block; width: .65rem; height: .65rem; margin-right: .45rem; border-radius: 50%; background: var(--accent-dark); }
 
